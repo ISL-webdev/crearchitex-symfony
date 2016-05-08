@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="subHeader">
+        <div class="wrap">
+            <h1>Differents Projetssdfs</h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <section class="content projets flex-container">
+            {% for project in projects %}
+                <div class="projet">
+                    <a href="/assets/images/{{ project.photo }}" title="{{ project.titre }}"><img src="{{ asset('/assets/images/'~project.photo) }}" alt="{{ project.photo }}"></a>
+                    <div class="projetInfo">
+                        <h3>{{ project.titre }}</h3>
+                        <a data-lightbox="projets" href="{{ asset('/assets/images/big-'~project.photo) }}" title="{{ project.titre }}"><span></span></a>
+                        <p>{{ project.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </div>
+{% endblock %}

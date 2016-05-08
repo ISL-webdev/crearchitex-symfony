@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="subHeader">
+        <div class="wrap">
+            <h1>Nous joindre</h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="map">
+            <a href="https://www.google.com/maps?ll=50.643063,5.56046&amp;z=1&amp;t=m&amp;hl=fr-FR&amp;gl=B&amp;mapclient=embed&amp;q=Rue+St+Laurent+33+4000+Li%C3%A8ge"
+               title="isl map"><img src="{{ asset('assets/images/map.png') }}" alt="map"></a>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2530.141536411547!2d5.560468799999999!3d50.643062500000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d5c4969%3A0xd379a00de93c696!2sRue+St+Laurent+33%2C+4000+Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1432364784416"></iframe>
+        </div>
+        <section class="content page-contact">
+            <div class="flex-container">
+                <div class="formulaire">
+                    <h3>Une question?</h3>
+
+                    <form>
+                        <label for="name">Name:</label><br/>
+                        <input type="text" id="name" name="name"
+                               placeholder="Votre nom"/><br/>
+                        <label for="email">Email: <span class="red">*</span></label><br/>
+                        <input type="email" id="email" required
+                               title="Entrez votre email" name="email"
+                               placeholder="Votre email"/><br/>
+                        <label for="message">Message: <span class="red">*</span></label><br/>
+                    <textarea required id="message" title="Entrez votre message"
+                              name="message" placeholder="Message"></textarea><br/>
+                        <input type="submit" value="Envoyer"/>
+                    </form>
+                </div>
+                <div class="infos">
+                    <h3>Nox coordonnées</h3>
+                    <img src="{{ asset('assets/images/address_contact.png') }}" alt="adresse"/> <b>Adresse:</b>
+                    Rue Saint-Laurent, 33 4000 Liège
+                    <br/><br/>
+                    <img src="{{ asset('assets/images/phone_contact.png') }}" alt="tel"/> <b>Tel:</b> +32 (0)4
+                    223 11 31 <br/><br/>
+                    <img src="{{ asset('assets/images/mail_contact.png') }}" alt="mail"/> <b>Mail:</b> <a
+                            href="mailto:info@crearchitech">info@crearchitech</a>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+

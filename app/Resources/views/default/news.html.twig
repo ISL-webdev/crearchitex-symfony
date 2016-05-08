@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="subHeader">
+        <div class="wrap">
+            <h1>Nos dernieres news/h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <section class="news">
+            {% for article in news %}
+                <article>
+                    <h2>{{ article.titre }}</h2>
+                    <span class="date">{{ article.datenews.date | date('d-m-Y') }}</span>
+                    <div class="contenu">
+                        {{ article.description }}
+                    </div>
+                </article>
+            {% endfor %}
+        </section>
+        <aside>
+        </aside>
+    </div>
+{% endblock %}

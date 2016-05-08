@@ -1,0 +1,832 @@
+html {
+    min-width: 20rem;
+}
+
+body {
+    color: #888;
+    background-color: #fff;
+    font: 1rem/1 'Open Sans', sans-serif;
+    padding: 0; margin: 0;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    body {
+        margin: .063rem;
+    }
+}
+/*General*/
+
+a,
+a:visited,
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #363636;
+    padding: 0;
+    margin: 0;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    h1 {
+        font-size: 1rem !important;
+    }
+    h2 {
+        font-size: .85rem;
+    }
+    h3 {
+        font-size: .750rem;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.fix {
+    display: none;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .fix {
+        display: block;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 0;
+    }
+}
+/*------------------------Header--------------------*/
+
+nav .logo img {
+    float: left;
+    height: 4.0625rem;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    border-top: 3px solid #363636;
+    color: rgba(225, 225, 225, .5);
+    background-color: inherit;
+    display: block;
+    font-size: .75rem;
+    font-weight: bold;
+    padding: 1.563rem .625rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    nav ul li a {
+        font-size: .75rem;
+    }
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #3F3F3F;
+    border-top: 3px solid #81B600;
+}
+/*----------------------Content------------------------*/
+
+.subHeader {
+    background-color: #eee;
+    color: #363636;
+    border-bottom: 1px solid #ccc;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .subHeader {
+        display: none;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .subHeader {
+        padding: 0.9375rem 0.3125rem;
+    }
+}
+
+.subHeader h1 {
+    padding: 1.25rem 0;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: normal;
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .subHeader h1 {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+}
+
+.content a:link,
+.content a:visited,
+.content a:hover {
+    color: #363636;
+}
+
+.content {
+    font-size: 0.875rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .content {
+        padding: 0.1875rem;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) {
+    .content {
+        padding: 0.3125rem;
+    }
+}
+/*--------------------------------Home--------------------------*/
+
+.slogan {
+    text-align: center;
+    margin-top: 1.875rem;
+}
+
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .slogan {
+        margin-top: 0;
+    }
+}
+.slogan span {
+    color: #ffffff;
+    background-color: #81B600;
+    padding: 0 .313rem;
+    border-radius: .125rem;
+}
+
+.slogan h1 {
+    color: #505050;
+    font-size: 1.375rem;
+    letter-spacing: -.037rem;
+    font-weight: normal;
+    line-height: .6rem;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 43.75rem) {
+    .slogan h1 {
+        font-size: 1.1rem;
+    }
+    .slogan h1:first-of-type {
+        line-height: 1.3rem;
+    }
+    .slogan h1:nth-child(2n) {
+        line-height: .1;
+    }
+}
+
+#slider {
+    margin: 1.25rem 0;
+}
+
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .slider-wrapper, .nivoSlider {
+        display: none;
+    }
+}
+
+.rounded {
+    color: #fff;
+    background-color: #363636;
+    padding: 10px 15px;
+    float: left;
+    border-radius: 100%;
+    margin-right: .625rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .rounded {
+        font-size: .75rem;
+        padding: 5px 10px;
+        margin: 0 .2rem;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .rounded {
+        padding: 7px 10px;
+    }
+}
+
+.first {
+    background-color: #81B600 !important;
+}
+
+.flex {
+    width: 32%;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .flex {
+        width: 90%;
+        margin: 5px 0;
+    }
+}
+
+.flex h2 {
+    font-size: 1rem;
+    color: #363636;
+    margin: 0;
+    padding: 0;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 43.75rem) {
+    .flex h2 {
+        font-size: .9rem;
+    }
+}
+
+.flex p {
+    font: .75rem normal Tahoma, sans-serif;
+    margin: .625rem 0 0 2.813rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .flex p {
+        margin-left: 2.188rem;
+        font-size: 12px;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .flex p {
+        font-size: .65rem;
+        margin-left: 2.5rem;
+    }
+}
+
+.flex h3 {
+    margin: .625rem 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #363636;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .recent h3 {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .flex h3 {
+        font-size: .9rem;
+    }
+}
+
+.flex span {
+    font: .75rem normal Tahoma, sans-serif;
+}
+
+.recent h2 {
+    font-size: 1.1rem;
+    color: #505050;
+}
+
+.recent hr {
+    margin-top: -.4rem;
+    margin-left: 14.58%;
+    border: 1px solid #eee;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-device-width: 30rem) {
+    .recent h2 {
+        font-size: .9rem;
+    }
+    .recent h3 {
+        font-size: .8rem;
+    }
+    .box {
+        max-height: 5rem;
+        overflow: hidden;
+    }
+    .recent hr {
+        margin-top: -0.1875rem;
+        margin-left: 6.875rem;
+        border: 1px solid #eee;
+    }
+}
+
+.flex-container {
+    display: flex;
+    margin: 1.25rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .flex-container {
+        margin: .8rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.work {
+    border-top: 1px solid #eee;
+    padding: 1.25rem 0;
+}
+/*----------------------------Equipe-------------------------*/
+
+.equipe p {
+    font-size: .75rem;
+    line-height: 1.3rem;
+}
+
+.quote p {
+    border: 1px solid #ddd;
+    padding: .625rem .313rem;
+}
+
+.quote img {
+    position: relative;
+    top: -.813rem;
+}
+
+.quote span {
+    font-size: .75rem;
+    position: relative;
+    top: -.875rem;
+    left: -1.25rem;
+}
+
+.quote {
+    height: 4.375rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .quote {
+        display: none;
+    }
+}
+
+.member h2 {
+    color: #81B600;
+    font-size: 1rem;
+}
+
+.member {
+    background-color: #ddd;
+    width: 45%;
+    margin: .938rem 0;
+    padding: .313rem .625rem;
+    position: relative;
+    border-radius: 3px;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .member {
+        margin: .625rem 0;
+        width: 90%;
+        padding: .313rem;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 37.5rem) {
+    .member {
+        width: 100%;
+    }
+}
+
+.member:before,
+.member:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 1rem;
+    left: .625rem;
+    width: 50%;
+    top: 10%;
+    max-width: 18.75rem;
+    background: #777;
+    box-shadow: 0 .938rem .625rem #777;
+    transform: rotate(-3deg);
+}
+
+.member:after {
+    transform: rotate(3deg);
+    right: .625rem;
+    left: auto;
+}
+
+.member img {
+    float: left;
+    width: 30%;
+    margin: .313rem .938rem .313rem .313rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .member img {
+        width: 30%;
+    }
+}
+
+.member h2 {
+    font-size: 1rem;
+}
+
+.member h3 {
+    font-size: .9rem;
+    font-weight: normal;
+    padding: .313rem 0;
+}
+
+.member h2,
+.member h3 {
+    text-shadow: 1px 1px rgba(255, 255, 255, .5);
+}
+
+.member span {
+    font-size: .750rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .equipe p {
+        font-size: 0.6875rem;
+        margin: 0.3125rem;
+        padding: 0.3125rem;
+        border: 1px solid #eee;
+    }
+}
+/*----------------------------Projets--------------------------------*/
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .projets {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.projet {
+    min-width: 13.75rem;
+    height: 9.188rem;
+    overflow: hidden;
+    margin: .625rem 0;
+    position: relative;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .projet {
+        width: 45%;
+        min-width: 150px;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+    }
+    .projet img {
+        width: 100%;
+    }
+}
+
+.projetInfo {
+    background: rgba(101, 176, 60, .7) url("../images/portfolio_smaller.png") top left no-repeat;
+    background-size: 1.875rem;
+    color: #fff;
+    max-width: 13.75rem;
+    height: 9.375rem;
+    position: relative;
+    top: -2.188rem;
+    transition: top 500ms ease;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 43.75rem) {
+    .projetInfo {
+        background-color: transparent;
+        top: 0;
+        position: absolute;
+        height: auto;
+        transition: none;
+    }
+}
+
+.projetInfo:hover {
+    top: -9.375rem;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+@media only screen and (max-width: 43.75rem) {
+    .projetInfo:hover {
+        top: 0;
+    }
+}
+
+.projetInfo span {
+    position: absolute;
+    width: 13.75rem;
+    height: 9.188rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+@media only screen and (max-width: 43.75rem) {
+    .projetInfo span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.projetInfo h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: .5rem 0 .5rem 1.875rem;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+@media only screen and (max-width: 43.75rem) {
+    .projetInfo h3 {
+        background: rgba(101, 176, 60, .8) url("../images/portfolio_smaller.png") 3px 3px no-repeat;
+        background-size: 1.5625rem;
+        margin-bottom: 0.3125rem;
+    }
+}
+
+.projetInfo p {
+    font-size: .75rem;
+    padding: .313rem;
+    margin: 0;
+}
+/* Tablettes ----------- */
+/* Smartphones ----------- */
+@media only screen and (max-width: 43.75rem) {
+    .projetInfo p {
+        display: inline;
+        background-color: rgba(101, 176, 60, .8);
+        padding: 0;
+    }
+}
+/*-----------------------------Contact---------------------------*/
+
+.map {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map a {
+    display: none;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .map iframe {
+        display: none;
+    }
+    .map a {
+        display: block;
+    }
+}
+
+.formulaire h3,
+.infos h3 {
+    border-bottom: 1px solid #ccc;
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .formulaire h3,
+    .infos h3 {
+        padding: 0.625rem 0;
+        margin: 1.875rem 0 0.625rem 0;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .formulaire h3,
+    .infos h3 {
+        padding: 0.625rem 0;
+    }
+}
+
+.formulaire,
+.infos {
+    width: 48%;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .infos {
+        display: none;
+    }
+    .formulaire {
+        font-size: 0.75rem;
+        width: 100%;
+    }
+}
+
+.formulaire input,
+.formulaire textarea {
+    border: 1px solid #ddd;
+    margin: 0.625rem 0;
+    padding: 0.3125rem;
+}
+
+.formulaire textarea {
+    width: 90%;
+    height: 6.25rem;
+}
+/*----------------------------Footer---------------------------------*/
+
+header,
+footer {
+    color: #ccc;
+    background-color: #363636;
+}
+footer ul li {
+    list-style-type: none;
+}
+.copyrights {
+    color: inherit;
+    background-color: #3F3F3F;
+    margin-top: 1.25rem;
+}
+
+.copyrights p {
+    margin: 0;
+    font-size: .75rem;
+    text-align: right;
+    padding: 0.625rem 0;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .copyrights p {
+        text-align: center;
+        margin-top: 0.9375rem;
+    }
+}
+
+.social ul li {
+    display: inline-block;
+    opacity: .5;
+    transition: transform 500ms ease;
+}
+
+.social ul li:hover {
+    opacity: 1;
+    transform: rotate(75deg);
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .social .logo {
+        display: none;
+    }
+    .social {
+        margin: 1.25rem 0;
+        text-align: center;
+    }
+}
+
+.block {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 1.04%;
+    width: 22.39%;
+    font: .75rem Tahoma, Geneva, sans-serif;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .block {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    .social p,
+    .news,
+    .twitter {
+        display: none;
+    }
+}
+/* Tablettes ----------- */
+
+@media only screen and (min-width: 30rem) and (max-width: 43.75rem) {
+    .block {
+        width: 30.5%;
+    }
+    .twitter {
+        display: none;
+    }
+}
+
+.block h3 {
+    color: #ffffff;
+    background-color: inherit;
+    border-bottom: 1px solid #3F3F3F;
+    margin-bottom: 0.625rem;
+    padding: .938rem 0;
+}
+/* Smartphones ----------- */
+
+@media only screen and (max-width: 30rem) {
+    .block h3 {
+        font-size: 0.875rem;
+        padding: 0 0 .313rem 0;
+    }
+}
+
+.block b {
+    color: #ffffff;
+    background-color: inherit;
+}
+
+.block img {
+    vertical-align: middle;
+}
+
+.newsBlock li {
+    background: url("../images/list_star.png") no-repeat;
+    padding: 0 0 0.9375rem 0.9375rem;
+}
+.contact ul li {
+    padding: 0.3125rem 0;
+}
