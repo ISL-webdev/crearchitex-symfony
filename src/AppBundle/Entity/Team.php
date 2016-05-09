@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Team
  *
- * @ORM\Table(name="user")
+ * @ORM\Table(name="users")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\TeamRepository")
  */
 class Team
@@ -59,7 +59,7 @@ class Team
     /**
      * @ORM\Column(type="string")
      */
-    private $function;
+    private $fonction;
 
     /**
      * @ORM\Column(type="string")
@@ -287,9 +287,9 @@ class Team
      *
      * @return mixed
      */
-    public function getFunction()
+    public function getFonction()
     {
-        return $this->function;
+        return $this->fonction;
     }
 
     /**
@@ -301,7 +301,7 @@ class Team
      */
     private function _setFunction($function)
     {
-        $this->function = $function;
+        $this->function = $fonction;
 
         return $this;
     }
