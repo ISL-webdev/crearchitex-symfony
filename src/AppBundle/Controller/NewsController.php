@@ -3,11 +3,9 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\News;
+use AppBundle\Form\TitreDescription;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 
 class NewsController extends Controller {
@@ -32,12 +30,7 @@ class NewsController extends Controller {
         $news = new News();
         $news->setDateNews(new \DateTime('today'));
 
-        $form = $this->createFormBuilder($news)
-            ->add('titre', TextType::class)
-            ->add('description', TextareaType::class, ['label' => 'Contenu'])
-            ->add('submit', SubmitType::class, ['label' => 'Ajouter'])
-            ->getForm();
-
+        $form = $this->createForm(TitreDescription::class, $news);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() and $form->isValid()) {
