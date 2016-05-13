@@ -38,12 +38,13 @@ class ProjectsController extends Controller {
         $cats = $db->getRepository('AppBundle:ProjectsCategories')->findAll();
 
         $form = $this->createForm(TitreDescription::class, $projets);
-        $form->add('projet_categorie_id', ChoiceType::class, [
+
+        // le nom du champs doit correspondre au nom de la propriété dans la classe Projects
+        $form->add('categorie', ChoiceType::class, [
             'choices' => $cats,
-            'choices_as_values' => true,
-            'choice_label' => function ($val, $key, $index) {
-                return $val->getCategorie();
-            },
+            'choice_label' => function(ProjectsCategories $categorie, $key, $index){
+                return $categorie->getName();
+            }
         ])
             ->add('photo', FileType::class);
 

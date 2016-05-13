@@ -14,13 +14,14 @@ class Projects {
     *@ORM\GeneratedValue(strategy="AUTO")
     *@ORM\Column(type="integer")
     */
-    private $projet_id;
+    private $id;
 
     /**
-//     *@ORM\ManyToOne(targetEntity="ProjectsCategories")
-     * @ORM\Column(type="integer")
+     * Les relations dans doctrine se fonct entre objets, pas à l'aide d'ids
+     * @ORM\ManyToOne(targetEntity="ProjectsCategories", inversedBy="projects")
+     * @var ProjectsCategories
      */
-    private $projet_categorie_id;
+    private $categorie;
 
     /**
      * @ORM\Column(type="string")
@@ -50,17 +51,17 @@ class Projects {
     /**
      * @return mixed
      */
-    public function getProjetCategorieId()
+    public function getCategorie()
     {
-        return $this->projet_categorie_id;
+        return $this->categorie;
     }
 
     /**
-     * @param mixed $projet_categorie_id
+     * @param mixed $categorie
      */
-    public function setProjetCategorieId($projet_categorie_id)
+    public function setCategorie($categorie)
     {
-        $this->projet_categorie_id = $projet_categorie_id;
+        $this->categorie = $categorie;
     }
 
     /**

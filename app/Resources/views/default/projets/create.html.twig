@@ -11,11 +11,11 @@
             {{ form_start(form) }}
             {{ form_row(form.titre) }}
             {{ form_row(form.description) }}
-            {{ form_row(form.projet_categorie_id) }}
+            {{ form_row(form.categorie) }} {# le select des catégories #}
             {#<label>Catégorie#}
                 {#<select>#}
                     {#{% for cat in categories %}#}
-                        {#<option value="{{ cat.projetcategorieid }}">{{ cat.categorie }}</option>#}
+                        {#<option value="{{ cat.projetcategorieid }}">{{ cat.projects }}</option>#}
                     {#{% endfor %}#}
                 {#</select>#}
             {#</label>#}

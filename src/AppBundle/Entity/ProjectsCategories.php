@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,39 +13,51 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class ProjectsCategories
 {
+
+    public function __construct(){
+        // les catégories concernent plusieurs projets
+        $this->projects = new ArrayCollection();
+    }
     /**
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $projet_categorie_id;
+    private $id;
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Projects", mappedBy="categorie")
+     * // il ne faut pas utiliser @ORM\Column lorsque l'on utilise des annotations
+     * @var ArrayCollection
+     */
+    private $projects;
+
     /**
      * @ORM\Column(type="string")
      */
-    private $categorie;
+    private $name;
     /**
      * @ORM\Column(type="text")
      */
     private $description;
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
-    private $is_visible = 1;
+    private $is_visible = true;
 
     /**
      * @return mixed
      */
-    public function getCategorie()
+    public function getProjects()
     {
-        return $this->categorie;
+        return $this->projects;
     }
 
     /**
-     * @param mixed $categorie
+     * @param mixed $projects
      */
-    public function setCategorie($categorie)
+    public function setProjects($projects)
     {
-        $this->categorie = $categorie;
+        $this->projects = $projects;
     }
 
     /**
@@ -82,9 +95,14 @@ class ProjectsCategories
     /**
      * @return mixed
      */
-    public function getProjetCategorieId()
-    {
-        return $this->projet_categorie_id;
+    public function getName() {
+        return $this->name;
     }
-    
+
+    /**
+     * @param mixed $name
+     */
+    public function setName( $name ) {
+        $this->name = $name;
+    }
 }
