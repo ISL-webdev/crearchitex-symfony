@@ -16,157 +16,54 @@ class Projects {
     */
     private $projet_id;
 
-/**
- *@ORM\Column(type="integer")
- */
-private $projet_categorie_id;
-
-/**
- * @ORM\Column(type="string")
- */
-private $titre;
-
-/**
- * @ORM\Column(type="text")
- */
-private $description;
-
-/**
- * @ORM\Column(type="date")
- */
-private  $date_projet;
-
-/**
- * @ORM\Column(type="string")
- */
-private $photo;
-
-/**
- * @ORM\Column(type="integer")
- */
-private $is_visible;
-
     /**
-     * Sets the value of project_id.
-     *
-     * @param mixed $project_id the project id
-     *
-     * @return self
+//     *@ORM\ManyToOne(targetEntity="ProjectsCategories")
+     * @ORM\Column(type="integer")
      */
-    private function setProjectId($project_id)
-    {
-        $this->project_id = $project_id;
-
-        return $this;
-    }
+    private $projet_categorie_id;
 
     /**
-     * Sets the value of project_categorie_id.
-     *
-     * @param mixed $project_categorie_id the project categorie id
-     *
-     * @return self
+     * @ORM\Column(type="string")
      */
-    private function setProjectCategorieId($project_categorie_id)
-    {
-        $this->project_categorie_id = $project_categorie_id;
-
-        return $this;
-    }
+    private $titre;
 
     /**
-     * Sets the value of titre.
-     *
-     * @param mixed $titre the titre
-     *
-     * @return self
+     * @ORM\Column(type="text")
      */
-    private function setTitre($titre)
-    {
-        $this->titre = $titre;
-
-        return $this;
-    }
+    private $description;
 
     /**
-     * Sets the value of description.
-     *
-     * @param mixed $description the description
-     *
-     * @return self
+     * @ORM\Column(type="date")
      */
-    private function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
+    private  $date_projet;
 
     /**
-     * Sets the value of date_project.
-     *
-     * @param mixed $date_project the date project
-     *
-     * @return self
+     * @ORM\Column(type="string")
      */
-    private function setDateProject($date_project)
-    {
-        $this->date_project = $date_project;
-
-        return $this;
-    }
+    private $photo;
 
     /**
-     * Sets the value of photo.
-     *
-     * @param mixed $photo the photo
-     *
-     * @return self
+     * @ORM\Column(type="integer")
      */
-    private function setPhoto($photo)
-    {
-        $this->photo = $photo;
-
-        return $this;
-    }
+    private $is_visible = 1;
 
     /**
-     * Sets the value of is_visible.
-     *
-     * @param mixed $is_visible the is visible
-     *
-     * @return self
-     */
-    private function setIsVisible($is_visible)
-    {
-        $this->is_visible = $is_visible;
-
-        return $this;
-    }
-
-    /**
-     * Gets the value of project_id.
-     *
      * @return mixed
      */
-    public function getProjectId()
+    public function getProjetCategorieId()
     {
-        return $this->project_id;
+        return $this->projet_categorie_id;
     }
 
     /**
-     * Gets the value of project_categorie_id.
-     *
-     * @return mixed
+     * @param mixed $projet_categorie_id
      */
-    public function getProjectCategorieId()
+    public function setProjetCategorieId($projet_categorie_id)
     {
-        return $this->project_categorie_id;
+        $this->projet_categorie_id = $projet_categorie_id;
     }
 
     /**
-     * Gets the value of titre.
-     *
      * @return mixed
      */
     public function getTitre()
@@ -175,8 +72,14 @@ private $is_visible;
     }
 
     /**
-     * Gets the value of description.
-     *
+     * @param mixed $titre
+     */
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+    }
+
+    /**
      * @return mixed
      */
     public function getDescription()
@@ -185,18 +88,30 @@ private $is_visible;
     }
 
     /**
-     * Gets the value of date_project.
-     *
-     * @return mixed
+     * @param mixed $description
      */
-    public function getDateProject()
+    public function setDescription($description)
     {
-        return $this->date_project;
+        $this->description = $description;
     }
 
     /**
-     * Gets the value of photo.
-     *
+     * @return mixed
+     */
+    public function getDateProjet()
+    {
+        return $this->date_projet;
+    }
+
+    /**
+     * @param mixed $date_projet
+     */
+    public function setDateProjet($date_projet)
+    {
+        $this->date_projet = $date_projet;
+    }
+
+    /**
      * @return mixed
      */
     public function getPhoto()
@@ -205,12 +120,28 @@ private $is_visible;
     }
 
     /**
-     * Gets the value of is_visible.
-     *
+     * @param mixed $photo
+     */
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+    }
+
+    /**
      * @return mixed
      */
     public function getIsVisible()
     {
         return $this->is_visible;
     }
+
+    /**
+     * @param mixed $is_visible
+     */
+    public function setIsVisible($is_visible)
+    {
+        $this->is_visible = $is_visible;
+    }
+
+
 }

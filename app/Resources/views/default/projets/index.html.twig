@@ -3,10 +3,15 @@
 {% block body %}
     <div class="subHeader">
         <div class="wrap">
-            <h1>Differents Projetssdfs</h1>
+            <h1>Differents Projets</h1>
         </div>
     </div>
     <div class="wrap">
+        {% for flash_message in app.session.flashBag.get('notice') %}
+            <div class="flash-notice">
+                {{ flash_message }}
+            </div>
+        {% endfor %}
         <section class="content projets flex-container">
             {% for project in projects %}
                 <div class="projet">

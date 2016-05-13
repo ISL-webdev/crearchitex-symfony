@@ -20,7 +20,7 @@ body {
 a,
 a:visited,
 a:hover {
-    color: #fff;
+    color: #81B600;
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ nav ul li {
 
 nav ul li a {
     border-top: 3px solid #363636;
-    color: rgba(225, 225, 225, .5);
+    color: rgba(225, 225, 225, .5) !important;
     background-color: inherit;
     display: block;
     font-size: .75rem;
@@ -829,4 +829,55 @@ footer ul li {
 }
 .contact ul li {
     padding: 0.3125rem 0;
+}
+
+.flash-notice {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.news article {
+    margin: 40px 0;
+}
+
+.news article span {
+    font-size: small;
+}
+
+.news article p {
+    font-size: 15px;
+}
+
+.Form {
+}
+
+.Form div {
+    margin: 20px 0;
+}
+
+.Form input {
+    display: block;
+}
+
+.Form textarea {
+    display: block;
+    width: 300px;
+    height: 100px;
+}
+
+.Form label {
+    font-size: 14px;
+}
+
+.Form__h2 {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    color: #363636;
+    font-size: 20px;
 }

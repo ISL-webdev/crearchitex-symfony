@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class News
  * @package AppBundle\Entity
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\NewsRepository")
  * @ORM\Table(name="news")
  */
 class News {
@@ -32,11 +32,11 @@ class News {
     /**
      * @ORM\Column(type="integer")
      */
-    private $user_id;
+    private $user_id = 1;
     /**
      * @ORM\Column(type="integer")
      */
-    private $is_visible;
+    private $is_visible = 1;
 
     /**
      * @return mixed
